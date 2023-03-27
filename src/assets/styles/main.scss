@@ -15,6 +15,7 @@
  * see commented examples below
  */
 
+ 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 
@@ -28,3 +29,4 @@
 /**
  * Do NOT include anything else in this file!
  */
+//@import "npm:@fortawesome fontawesome-free/css/all.css
