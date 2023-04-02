@@ -1,27 +1,248 @@
 <!DOCTYPE html>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+<html lang="es"> <!--Lo añadimos debido al validador y por la guía de estilo escogida-->
+<!--La barra inclinada de cierre, de las etiquetas vacias como metas y link, se eliminan por que lo pide la guía de estilo-->
+
+<head>
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> SE ELIMINA POR LA GUIA-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Nicolas Moncada">
+  <meta name="organisation" content="UOC">
+  <meta name="description" content="GNSS">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <!--La guía sugiere eliminar el atributo "type=" para los "links" CSS y JavaScript -->
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>GNSS</title>
+</head>
+
+<body>
+  <include src="./views/header.html"></include>
+
+  <main class="container">
+
+    <h1 class="container__h1"><i class="fa-solid fa-satellite"></i>GNSS: Global Navigation Satellite System<i
+        class="fa-solid fa-satellite"></i></h1>
+
+    <figure class="figure">
+      <iframe class="figure_video" width="560" height="315" src="https://www.youtube.com/embed/-1ngun6OfgQ"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <figcaption class="figure__figcaption" lang="en">Teaser | Synthesizing Obama: Learning Lip Sync from Audio
+      </figcaption>
+    </figure>
+
+    <section class="section">
+      <h2 class="section__h2">¿Qué es y para qué sirve un equipo GNSS?</h2>
+
+      <p class="section__p">
+        <!--INCLUIR  LA REFERENCIA WEB-->
+        <abbr title="Global Navigation Satellite System"> GNSS</abbr> (Global Navigation Satellite System) o <abbr
+          title="Sistema Satelitales de Navegación Global"> SSNG</abbr>
+        (Sistema Satelitales de Navegación Global) son los
+        acrónimos que se utilizan para agrupar los diferentes sistemas de navegación por satélite que con cobertura
+        global proveen un posicionamiento geoespacial de una manera autónoma.
       </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+      <p class="section__p">
+        Este concepto agrupa a diferentes sistemas como son el <abbr title="Sistema de Posicionamiento Global">
+          GPS</abbr>, Glonass, Galileo o Compass entre otros,
+        permitiendo posicionamientos muy precisos basándose en señales de alta presición emitidas por relojes
+        atómicos y siendo múltiples sus aplicaciones como la geo información o en investigaciones geocientificas.
+      </p>
+      <p class="section__p">
+        Estos Sistemas de Posicionamiento Global son sistemas pasivos de navegación basados en las emisiones de
+        radiofrecuencia de los satélites emisores los cuales proporcionan una referencia espacio-temporal
+        independientemente de las condiciones atmosféricas del momento, todo ello en cualquier lugar de la Tierra y
+        de manera ininterrumpida. El sistema está compuesto por una red de satélites, radios bases terrestre y
+        receptores <abbr title="Sistema de Posicionamiento Global">
+          GPS</abbr> que permiten casi todas las posibilidades de navegación y posicionamiento en cualquier parte
+        del mundo a cualquier hora sin importar las condiciones meteorológicas.
+      </p>
+
+      <figure class="figure">
+        <img class="figure__img" src="./assets/images/gnss.jpg" alt="componentes-de-un-satelite" width="450">
+        <figcaption class="figure__figcaption"><i class="figure__strong"> Los 3 segmentos del <abbr
+              title="Global Navigation Satellite System"> GNSS</abbr></figcaption>
+      </figure>
+
+    </section>
+
+    <section class="section">
+      <h2 class="section__h2">Los segmentos del <abbr title="Global Navigation Satellite System"> GNSS</abbr>
+      </h2>
+      <p class="section__p"><abbr title="Global Navigation Satellite System"> GNSS</abbr> consta de 3
+        componentes (o segmentos) para
+        proporcionar información de posición y tiempo:
+      <ul class="section__ul">
+        <li class="section__li"><strong class="section__strong"><i class="fa-solid fa-rocket"></i> El segmento
+            espacial</strong>, donde se encuentran
+          los diferentes tipos de
+          constelaciones de sistemas de
+          satélites que orbitan la Tierra. Pueden orbitar a unos 20.000 km de altitud, estan organizados en
+          doferentes órbitas para poder proporcionar la cobertura deseada.
+
+          <table class="table">
+            <caption class="table__caption">
+              Constelaciones de satélites GNSS Internacionales
+            </caption>
+
+            <thead class="table__thead"> <!--"thead""" es un bloque que está dentro del Bloque "table"????-->
+              <tr class="table__tr"> <!--Es un bloque dentro de otro o es un elemento???-->
+                <th class="table__th">NOMBRE</th> <!-- "th" es un elemento del bloque "TR" o de "table"-->
+                <th class="table__th">PAÍS DE ORIGEN</th>
+                <th class="table__th">TOTALMENTE OPERACIONAL</th>
+                <th class="table__th">NÚMERO DE SATÉLITES</th>
+                <th class="table__th">FRECUENCIAS PORTADORAS</th>
+              </tr>
+            </thead>
+
+            <tbody class="table__tbody">
+              <tr class="table__tr">
+                <th class="table__th">GPS</th>
+                <td class="table__td">EE.UU</td>
+                <td class="table__td">1993</td>
+                <td class="table__td">31</td>
+                <td class="table__td">L1/L2/L5</td>
+              </tr>
+
+              <tr class="table__tr">
+                <th class="table__th">GLONASS</th>
+                <td class="table__td">Rusia</td>
+                <td class="table__td">1995</td>
+                <td class="table__td">24+</td>
+                <td class="table__td">G1/G2</td>
+              </tr>
+
+              <tr class="table__tr">
+                <th class="table__th">Galileo</th>
+                <td class="table__td">Europa</td>
+                <td class="table__td">2020</td>
+                <td class="table__td">30 (22 actuales)</td>
+                <td class="table__td">E1/E5a/E5b</td>
+              </tr>
+
+              <tr class="table__tr">
+                <th class="table__th">BeiDou</th>
+                <td class="table__td">Pordelana</td>
+                <td class="table__td">2020</td>
+                <td class="table__td">30 (28 actuales)</td>
+                <td class="table__td">B1/b2</td>
+              </tr>
+
+              <tr class="table__tr">
+                <th class="table__th">NAVIC</th>
+                <td class="table__td">India</td>
+                <td class="table__td">2020</td>
+                <td class="table__td">7</td>
+                <td class="table__td">L5</td>
+              </tr>
+
+              <tr class="table__tr">
+                <th class="table__th">QZSS</th>
+                <td class="table__td">Japón</td>
+                <td class="table__td">2024</td>
+                <td class="table__td">7 (4 actuales)</td>
+                <td class="table__td">L1/L2/L5</td>
+              </tr>
+            </tbody>
+          </table>
+        </li>
+
+        <li class="section__li"><strong class="section__strong"><i class="fa-solid fa-satellite-dish"></i> El segmento
+            de control</strong>, compuesto por un
+          grupo de estaciones de control en
+          tierra para la monitorización
+          y sincronización de las señales de los satelites. Las estaciones que monitorean los satélites, transmiten
+          la información obtenida junto con el estado del satélite, a la estación de control maestra para su
+          posterior análisis. Posteriormente, si se encuentra necesario realizar una sincronización para mejorar la
+          presición, la estación de control maestra realiza los cálculos necesarios y transmite las correcciones de
+          órbita y tiempo a los satélites a través de las estaciones de carga de datos.</li>
+
+        <li class="section__li"><strong class="section__strong"><i class="fa-solid fa-user-astronaut"></i> El segmento
+            de usuario</strong>, es basicamente el
+          conjunto de usuarios que disponen
+          de
+          un sistema receptor de
+          señales <abbr title="Global Navigation Satellite System"> GNSS</abbr>.</li>
+      </ul>
+
+      <figure class="figure">
+        <img class="figure__img" src="./assets/images/segmentos.png" alt="segmentos-tierra-espacio-usuario" width="450">
+        <figcaption class="figure__figcaption">Segmentos del <abbr title="Global Navigation Satellite System">
+            GNSS</abbr></figcaption>
+      </figure>
+
+    </section>
+
+    <section class="section">
+      <h2 class="section__h2">Sistema <abbr title="Satellite Based Augmentation System"> SBAS</abbr></h2>
+
+      <p class="section__p">
+        <abbr title="Satellite Based Augmentation System"> SBAS</abbr> (Satellite Based Augmentation System), es un
+        sistema del segmento terrestre formada por una red de
+        estaciones, distribuidas por una amplia zona geográfica y tambien delimitada. Su funcionalidad es la
+        corrección de las señales que los Sistemas (<abbr title="Global Navigation Satellite System"> GNSS</abbr>)
+        transmiten al receptor <abbr title="Sistema de Posicionamiento Global">
+          GPS</abbr> del usuario. Los sistemas <abbr title="Satellite Based Augmentation System">
+          SBAS</abbr>
+        mejoran el posicionamiento horizontal y vertical del receptor y dan información sobre la calidad de las
+        señales. Aunque inicialmente fue desarrollado para dar una precisión mayor a la navegación aérea.
+      </p>
+
+      <p class="section__p">Actualmente hay más sistemas <abbr title="Satellite Based Augmentation System">
+          SBAS</abbr> en desarrollo pero principalmente se pueden distinguir los siguientes: </p>
+
+      <ul class="section__ul">
+        <li class="section__li"><abbr title="Wide Area Augmentation System"><strong class="section__strong">
+              WAAS</strong></abbr> (Wide Area Augmentation
+          System), gestionado por
+          el Departamento de Defensa de los Estados Unidos.
+        </li>
+        <li class="section__li"><abbr title="European Geostationary Navigation Overlay Service"><strong
+              class="section__strong"> EGNOS</strong></abbr>
+          (European Geostationary
+          Navigation Overlay Service), administrado por la Agencia de la Unión
+          Europea para el Programa Espacial.</li>
+        <li class="section__li"><abbr title="Wide Area GPS Enhancement"><strong class="section__strong"> WAGE
+            </strong></abbr> (Wide Area GPS Enhancement),
+          que transmite más
+          precisión en los datos de efemérides y reloj de los
+          satélites destinado a uso militar.</li>
+        <li class="section__li"><abbr title="Multi-Functional Satellite Augmentation System"><strong
+              class="section__strong"> MSAS </strong></abbr>
+          (Multi-Functional Satellite
+          Augmentation System), operado por Japón.</li>
+        <li class="section__li"><strong class="section__strong">StarFire</strong>, gestionado por la empresa John
+          Deere.</li>
+        <li class="section__li"><abbr title="Quasi-Zenith Satellite System"><strong class="section__strong">
+              QZSS</strong></abbr> (Quasi-Zenith Satellite
+          System), propuesto por
+          Japón.</li>
+        <li class="section__li"><abbr title="GPS and GEO Augmented Navigation"><strong class="section__strong">
+              GAGAN</strong> </abbr>(GPS and GEO Augmented
+          Navigation),
+          planeado por la India.</li>
+      </ul>
+
+      <p class="section__p">
+        En la siguiente imagen se puede ver su distribución:
+      </p>
+      <figure class="figure">
+        <img class="figure__img" src="./assets/images/sbas.png"
+          alt="areas-de-cobertura-de-los-sistema-de-aumentacion-basado-en-satelites" width="450">
+        <figcaption class="figure__figcaption">Áreas de cobertura de los Sistemas <abbr
+            title="Satellite Based Augmentation System">
+            SBAS</abbr></figcaption>
+      </figure>
+    </section>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+
 </html>
