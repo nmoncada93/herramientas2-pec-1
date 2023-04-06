@@ -1,18 +1,31 @@
-
 .section {
     &__h2 {
         padding: 5% 0 3% 0;
+        font-family: $font-family-spacial1;
         font-size: $font-size-h2;
         font-weight: bold;
         line-height: 1.5;
-        color: var(--color-third);
         text-align: center;
+        letter-spacing: 2;
+        color: var(--color-blue);
+
+        @media (min-width: 992px) {
+            font-size: $desk-font-size-h2;
+        }
     }
 
     &__h3 {
+        font-family: $font-family-spacial1;
         font-size: $font-size-h3;
-        border: 2px blueviolet solid;
         margin-top: 6%;
+        letter-spacing: 2;
+        text-align: left;
+        font-weight: bold;
+
+        @media (min-width: 992px) {
+            font-size: $desk-font-size-h3;
+        }
+
     }
     
     &__p {
@@ -20,14 +33,39 @@
         margin: 5% 0 5% 0;    
         word-spacing: 0.4em;    
         hyphens: auto;
+
+        @media (min-width: 992px) {
+            font-size: $desk-font-size-p;
+        }
     }
 
     &__li {
         font-size: $font-size-p;
         margin: 5% 4% 5% 4%;  
         list-style-type: disc;   
-        margin-left: 3%; 
         hyphens: auto; //si algun texto no cabe, pondrá un guión y lo enviará a la linea siguiente  
+
+        @media (min-width: 992px) {
+            font-size: $desk-font-size-p;
+        }
+    }
+
+    &__span {
+        color: var(--color-red);
+        font-weight: bold;  
+    }
+
+    @media (min-width: 992px) {
+        .div {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .div3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }
 

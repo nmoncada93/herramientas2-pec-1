@@ -1,4 +1,24 @@
 .footer {
     text-align: center;
     color: var(--color-white);
+    background-color: var(--color-black);
+    padding: 10%;
+    margin-top: 15%;
+    font-family: $font-family-spacial1;
+    letter-spacing: 1.5;
+
+    &__li, &__p {
+        line-height: 2rem;
+
+        @media (min-width: 992px){
+            font-size: $desk-font-size-p;
+        }
+    }
+
+    &__li:hover {
+        color: var(--color-red);
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.7s;
+        font-size: 1.2rem;
+    }
 }

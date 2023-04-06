@@ -4,45 +4,23 @@ $font-family-spacial1: 'Orbitron', sans-serif;
 $font-family-spacial2: 'Space Mono', monospace;
 $font-family-spacial3: 'Arvo', serif, "Georgia";
 
-
+/**********************************
+FONT SIZE MOBILE FIRST
+**********************************/
 $font-size-h1: 2rem;
 $font-size-h2: 1.8rem;
 $font-size-h3: 1.5rem;
-$font-size-p : 1.1rem;
+$font-size-p : 1rem;
 
-
-
+/**********************************
+FONT SIZE ONLY DESKTOP
+**********************************/
 $desk-font-size-h1: 3rem;
 $desk-font-size-h2: 2.2rem;
 $desk-font-size-h3: 2rem;
 $desk-font-size-p : 1.2rem;
 
-//$color-first       : #181818;
-//$color-second      : #f0f0f0;
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//-------------------------------uoc-boilerplate---------------------------------------
-$uoc-corporate: #000078;
-$myBackgroud: #81ff73;
-$uoc-bg: color.scale($myBackgroud, $lightness: 70%);
-
-$mqMinWidth: 420px;
