@@ -5,12 +5,15 @@
 /* Definimos las Custom properties */
 :root{
     /* Colores */
-    --color-first       : #181818;
-    --color-second      : #f0f0f0;
+    --color-black       : #181818;
+    --color-white       : #f0f0f0;
+    --color-blue        : #07ecf3;
+    --color-red         : #ed1b2f;
+    --color-darkBlue    : #003247;
     
-    /* Tipografía */
+    /* Tipografía 
     --font-first   : Helvetica, Arial, sans-serif;
-    --font-second  : Verdana;
+    --font-second  : Verdana;*/
 }
 
 /*
@@ -135,9 +138,9 @@ svg{
 body {
   min-height  : 100vh; //Altura minima
   font-size   : 100%; //Ideal para que se adapte a lo que configura el usuario
-  font-family : var(--font-first);
-  color       : var(--color-first);
-  background-color: var(--color-second);
+  //font-family : var(--font-first);
+  ///color       : var(--color-first);
+  //background-color: var(--color-second);
   /* (opcional) */ line-height: 1.4em; //por cuestiones de diseño con las WCAG
   /* (Opcional) */ //hyphens: auto; //si algun texto no cabe, pondrá un guión y lo enviará a la linea siguiente, se evita desbordamiento
   /* (Opcional) */ font-smooth: always;

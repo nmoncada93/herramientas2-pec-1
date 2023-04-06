@@ -1,13 +1,24 @@
 @use "sass:color";
 
-$font-family-spacial1: 'Orbitron', sans-serif, ;
+$font-family-spacial1: 'Orbitron', sans-serif;
 $font-family-spacial2: 'Space Mono', monospace;
-$font-family-spacial3: 'Arvo', serif, "Georgia", "Times New Roman", serif;
+$font-family-spacial3: 'Arvo', serif, "Georgia";
 
-$font-size-h2: 5.4rem;
 
-$color-first       : #181818;
-$color-second      : #f0f0f0;
+$font-size-h1: 2rem;
+$font-size-h2: 1.8rem;
+$font-size-h3: 1.5rem;
+$font-size-p : 1.1rem;
+
+
+
+$desk-font-size-h1: 3rem;
+$desk-font-size-h2: 2.2rem;
+$desk-font-size-h3: 2rem;
+$desk-font-size-p : 1.2rem;
+
+//$color-first       : #181818;
+//$color-second      : #f0f0f0;
 
 
 

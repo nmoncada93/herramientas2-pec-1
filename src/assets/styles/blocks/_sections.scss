@@ -1,0 +1,33 @@
+
+.section {
+    &__h2 {
+        padding: 5% 0 3% 0;
+        font-size: $font-size-h2;
+        font-weight: bold;
+        line-height: 1.5;
+        color: var(--color-third);
+        text-align: center;
+    }
+
+    &__h3 {
+        font-size: $font-size-h3;
+        border: 2px blueviolet solid;
+        margin-top: 6%;
+    }
+    
+    &__p {
+        font-size: $font-size-p;
+        margin: 5% 0 5% 0;    
+        word-spacing: 0.4em;    
+        hyphens: auto;
+    }
+
+    &__li {
+        font-size: $font-size-p;
+        margin: 5% 4% 5% 4%;  
+        list-style-type: disc;   
+        margin-left: 3%; 
+        hyphens: auto; //si algun texto no cabe, pondrá un guión y lo enviará a la linea siguiente  
+    }
+}
+

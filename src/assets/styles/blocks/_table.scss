@@ -1,0 +1,25 @@
+.table {
+    margin: 5% 0 5% 0;
+
+    &__caption {
+        font-size: 1.5rem;
+    }
+
+    &__thead {
+        font-size: 0.8rem;
+    }
+
+    &__td {
+        border-bottom: 1px var(--color-white) solid;
+        border-right: 1px var(--color-white) solid;
+        text-align: center;
+    }
+
+    &__th {
+        text-align: center;
+        font-size: 0.8rem;
+        border: 0.7rem transparent solid;
+        padding: 2% 0% 2% 0%;
+    }
+
+}

@@ -20,13 +20,10 @@
   <title>GNSS</title>
 </head>
 
-<body>
+<body class="body">
   <include src="./views/header.html"></include>
 
   <main class="container">
-
-    <h1 class="container__h1"><i class="fa-solid fa-satellite"></i>GNSS: Global Navigation Satellite System<i
-        class="fa-solid fa-satellite"></i></h1>
 
     <figure class="figure" id="gnss">
       <iframe class="figure_video" width="560" height="315" src="https://www.youtube.com/embed/-1ngun6OfgQ"
@@ -77,99 +74,102 @@
       </h2>
       <p class="section__p"><abbr title="Global Navigation Satellite System"> GNSS</abbr> consta de 3
         componentes (o segmentos) para
-        proporcionar información de posición y tiempo:
-      <ul class="section__ul">
-        <li class="section__li"><strong class="section__strong"><i class="fa-solid fa-rocket"></i> El segmento
-            espacial</strong>, donde se encuentran
+        proporcionar información de posición y tiempo:</p>
+
+        <h3 class="section__h3"><i class="fa-solid fa-rocket"></i>El segmento espacial</h3>
+        <p class="section__p">Donde se encuentran
           los diferentes tipos de
           constelaciones de sistemas de
           satélites que orbitan la Tierra. Pueden orbitar a unos 20.000 km de altitud, estan organizados en
-          doferentes órbitas para poder proporcionar la cobertura deseada.
+          doferentes órbitas para poder proporcionar la cobertura deseada.</p>
 
-          <table class="table">
-            <caption class="table__caption">
-              Constelaciones de satélites GNSS Internacionales
-            </caption>
+        <table class="table">
+          <caption class="table__caption">
+            Constelaciones de satélites GNSS Internacionales
+          </caption>
 
-            <thead class="table__thead"> <!--"thead""" es un bloque que está dentro del Bloque "table"????-->
-              <tr class="table__tr"> <!--Es un bloque dentro de otro o es un elemento???-->
-                <th class="table__th">NOMBRE</th> <!-- "th" es un elemento del bloque "TR" o de "table"-->
-                <th class="table__th">PAÍS DE ORIGEN</th>
-                <th class="table__th">TOTALMENTE OPERACIONAL</th>
-                <th class="table__th">NÚMERO DE SATÉLITES</th>
-                <th class="table__th">FRECUENCIAS PORTADORAS</th>
-              </tr>
-            </thead>
+          <thead class="table__thead"> <!--"thead""" es un bloque que está dentro del Bloque "table"????-->
+            <tr class="table__tr"> <!--Es un bloque dentro de otro o es un elemento???-->
+              <th class="table__th">Nombre</th> <!-- "th" es un elemento del bloque "TR" o de "table"-->
+              <th class="table__th">País de Origen</th>
+              <th class="table__th">Operativo desde</th>
+              <th class="table__th">Número de Satelites</th>
+              <th class="table__th">Frecuencias Portadoras</th>
+            </tr>
+          </thead>
 
-            <tbody class="table__tbody">
-              <tr class="table__tr">
-                <th class="table__th">GPS</th>
-                <td class="table__td">EE.UU</td>
-                <td class="table__td">1993</td>
-                <td class="table__td">31</td>
-                <td class="table__td">L1/L2/L5</td>
-              </tr>
+          <tbody class="table__tbody">
+            <tr class="table__tr">
+              <th class="table__th">GPS</th>
+              <td class="table__td">EE.UU</td>
+              <td class="table__td">1993</td>
+              <td class="table__td">31</td>
+              <td class="table__td">L1/L2/L5</td>
+            </tr>
 
-              <tr class="table__tr">
-                <th class="table__th">GLONASS</th>
-                <td class="table__td">Rusia</td>
-                <td class="table__td">1995</td>
-                <td class="table__td">24+</td>
-                <td class="table__td">G1/G2</td>
-              </tr>
+            <tr class="table__tr">
+              <th class="table__th">GLONASS</th>
+              <td class="table__td">Rusia</td>
+              <td class="table__td">1995</td>
+              <td class="table__td">24+</td>
+              <td class="table__td">G1/G2</td>
+            </tr>
 
-              <tr class="table__tr">
-                <th class="table__th">Galileo</th>
-                <td class="table__td">Europa</td>
-                <td class="table__td">2020</td>
-                <td class="table__td">30 (22 actuales)</td>
-                <td class="table__td">E1/E5a/E5b</td>
-              </tr>
+            <tr class="table__tr">
+              <th class="table__th">Galileo</th>
+              <td class="table__td">Europa</td>
+              <td class="table__td">2020</td>
+              <td class="table__td">30 (22 actuales)</td>
+              <td class="table__td">E1/E5a/E5b</td>
+            </tr>
 
-              <tr class="table__tr">
-                <th class="table__th">BeiDou</th>
-                <td class="table__td">Pordelana</td>
-                <td class="table__td">2020</td>
-                <td class="table__td">30 (28 actuales)</td>
-                <td class="table__td">B1/b2</td>
-              </tr>
+            <tr class="table__tr">
+              <th class="table__th">BeiDou</th>
+              <td class="table__td">Pordelana</td>
+              <td class="table__td">2020</td>
+              <td class="table__td">30 (28 actuales)</td>
+              <td class="table__td">B1/b2</td>
+            </tr>
 
-              <tr class="table__tr">
-                <th class="table__th">NAVIC</th>
-                <td class="table__td">India</td>
-                <td class="table__td">2020</td>
-                <td class="table__td">7</td>
-                <td class="table__td">L5</td>
-              </tr>
+            <tr class="table__tr">
+              <th class="table__th">NAVIC</th>
+              <td class="table__td">India</td>
+              <td class="table__td">2020</td>
+              <td class="table__td">7</td>
+              <td class="table__td">L5</td>
+            </tr>
 
-              <tr class="table__tr">
-                <th class="table__th">QZSS</th>
-                <td class="table__td">Japón</td>
-                <td class="table__td">2024</td>
-                <td class="table__td">7 (4 actuales)</td>
-                <td class="table__td">L1/L2/L5</td>
-              </tr>
-            </tbody>
-          </table>
-        </li>
+            <tr class="table__tr">
+              <th class="table__th">QZSS</th>
+              <td class="table__td">Japón</td>
+              <td class="table__td">2024</td>
+              <td class="table__td">7 (4 actuales)</td>
+              <td class="table__td">L1/L2/L5</td>
+            </tr>
+          </tbody>
+        </table>
+        </dt>
 
-        <li class="section__li"><strong class="section__strong"><i class="fa-solid fa-satellite-dish"></i> El segmento
-            de control</strong>, compuesto por un
+      <h3 class="section__h3"><i class="fa-solid fa-satellite-dish"></i> El segmento
+        de control</h3>
+
+        <p class="section__p">Compuesto por un
           grupo de estaciones de control en
           tierra para la monitorización
           y sincronización de las señales de los satelites. Las estaciones que monitorean los satélites, transmiten
           la información obtenida junto con el estado del satélite, a la estación de control maestra para su
           posterior análisis. Posteriormente, si se encuentra necesario realizar una sincronización para mejorar la
           presición, la estación de control maestra realiza los cálculos necesarios y transmite las correcciones de
-          órbita y tiempo a los satélites a través de las estaciones de carga de datos.</li>
+          órbita y tiempo a los satélites a través de las estaciones de carga de datos.</p>
 
-        <li class="section__li"><strong class="section__strong"><i class="fa-solid fa-user-astronaut"></i> El segmento
-            de usuario</strong>, es basicamente el
+      <h3 class="section__h3"><i class="fa-solid fa-user-astronaut"></i> El segmento
+        de usuario</h3>
+
+        <p class="section__p">Es basicamente el
           conjunto de usuarios que disponen
           de
           un sistema receptor de
-          señales <abbr title="Global Navigation Satellite System"> GNSS</abbr>.</li>
-      </ul>
+          señales <abbr title="Global Navigation Satellite System"> GNSS</abbr>.</p>
 
       <figure class="figure">
         <img class="figure__img" src="./assets/images/segmentos.png" alt="segmentos-tierra-espacio-usuario" width="450">
@@ -204,7 +204,7 @@
           el Departamento de Defensa de los Estados Unidos.
         </li>
         <li class="section__li"><abbr title="European Geostationary Navigation Overlay Service"><strong
-              class="section__strong"> EGNOS</strong></abbr>
+              class="section__strong">EGNOS</strong></abbr>
           (European Geostationary
           Navigation Overlay Service), administrado por la Agencia de la Unión
           Europea para el Programa Espacial.</li>
@@ -239,6 +239,58 @@
             title="Satellite Based Augmentation System">
             SBAS</abbr></figcaption>
       </figure>
+    </section>
+    <section class="section">
+      <h2 class="section__h2">Clasificación de satelites artificiales</h2>
+
+      <p>Los satélites artificiales es posible clasificarlos de varias maneras, desde su aplicación, constelación a la
+        que pertenecen, tamaño, geometría orbital, altura y velocidad a la que orbitan.
+      </p>
+
+      <p>A continuación se muestra su clasificación según altura:</p>
+
+      <h3>LEO (Low Earth Orbit)</h3>
+        <p>Las siglas LEO (low Earth orbit) se refieren a “órbita terrestre baja”. Los satélites LEO orbitan a en una
+          franja entre 160 km y 1.000 km de altura sobre la superficie del planeta, o entre 160 km y 2.000 km según otras
+          referencias.</p>
+        <p>La fuerza gravitacional de la Tierra se vuelve más fuerte cuanto más cerca se esté. Debido a esto, los
+          satélites LEO, al estar relativamente cerca de la Tierra, tienen que moverse muy rápido, para poder
+          contrarrestar la gravedad.</p>
+        <p>Por ejemplo, la Estación Espacial Internacional (ISS), a una altitud relativamente baja de 400 km, se mueve
+          aproximadamente a 27.600 km por hora y orbita la Tierra unas 16 veces al día. Los satélites geoestacionarios, a
+          una altitud mucho mayor de 35.786 km, se mueven a menos de la mitad de esa velocidad: unos 11.000 km por hora.
+        </p>
+
+      <h3>MEO (Medium Earth Orbit)</h3>
+      <p>Las siglas MEO (medium Earth orbit) se refieren a “órbita terrestre media”, y hace referencia a los satélites
+        que orbitan la Tierra entre los niveles LEO y GSO. Al no haber un acuerdo sobre si LEO termina en 1.000 o 2.000
+        km, se puede considerar que algunos satélites están en LEO o MEO, según la definición que se utilice.</p>
+
+      <h3>GSO (Geosynchronous Orbit)</h3>
+        <p>Las siglas GSO (geosynchronous orbit) se refieren a “órbita geosincrónica”, esto quiere decir que, la órbita
+          del satélite está sincronizada con la rotación de la Tierra. En otras palabras, la Tierra tarda un día en
+          completar una vuelta, al igual que el satélite OSG que tarda un día en completar una órbita a la Tierra.</p>
+        <p>Todos los satélites GSO (incluidos los satélites GEO) se encuentran aproximadamente a 35.786 km sobre la
+          Tierra: la única altitud a la que se puede mantener la órbita geosincrónica.</p>
+
+      <h3>HEO (Hight Eliptic Orbit)</h3>
+        <p>Teniendo en cuenta que existen satélites de órbita baja y media, es de esperar que habrá un satélite de órbita
+          alta, o HEO.
+
+          El acrónimo HEO a veces se usa para satélites, pero no significa “órbita terrestre alta”. HEO es la abreviatura
+          para “órbita altamente elíptica”, quiere decir, órbitas en las que, en lugar de permanecer en todo momento más o
+          menos a la misma altura sobre la Tierra, el satélite está más cerca del planeta en algunos puntos de su órbita
+          que en otros.
+
+          Los satélites con órbitas elípticas pasan más tiempo sobre algunas zonas del planeta que sobre otras, lo que
+          resulta útil para las comunicaciones.</p>
+
+      <figure class="figure">
+        <img class="figure__img" src="./assets/images/three-earth-orbit.jpg"
+          alt="Figura de la tierra con los 3 tipos de orbitas" width="450">
+        <figcaption class="figure__figcaption">Tipos de órbitas</figcaption>
+      </figure>
+
     </section>
   </main>
   <include src="./views/footer.html"></include>

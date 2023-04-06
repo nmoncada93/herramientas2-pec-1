@@ -33,16 +33,26 @@ Teko
 
 https://stylelint.io/user-guide/rules/
 
-/*
 
-"color-no-invalid-hex": true, // NO PERTMITIR COLOES HEXADECIMALES NO VALIDOS
-"string-no-newline": true, //NO PERMITIR SALTOS DE LINEA NO VALIODS DENTRO DE CADENAS
-"no-irregular-whitespace": true, //NO PERMITIR ESPACIOS EN BLANCO IRREGULARES
+
+#### SI FUNCIONA
+"selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
 "color-named": "never", //NO PERMITIR VALORES CON NOMBRES PARA COLORES
-"length-zero-no-unit": true, //DESABILITAR UNIDADES PARA VALORES 0
-"unit-allowed-list": ["rem", "%", "rgb", "rgba", "hsl", "hsla", "px", "s", "vh"],//UNIDADES PERMIIDAS
 "declaration-empty-line-before": "never", // NO PERMITTIR UNA LINEA VACIAS ANTES DE LA DECLARACIONES
+
+
+
+#### TESTEANDO
+"string-no-newline": true, //NO PERMITIR SALTOS DE LINEA NO VALIODS DENTRO DE CADENAS
+"length-zero-no-unit": true, //DESABILITAR UNIDADES PARA VALORES 0
 "color-hex-length": "short", // ESPECIFICA LA NOTACION CORTA DE COLORES HEXADECIMALES. GUIA MDO
+"unit-allowed-list": ["rem", "%", "rgb", "rgba", "hsl", "hsla", "px", "s", "vh"],//UNIDADES PERMIIDAS
+"color-no-invalid-hex": true, // NO PERTMITIR COLOES HEXADECIMALES NO VALIDOS
+"no-irregular-whitespace": true, //NO PERMITIR ESPACIOS EN BLANCO IRREGULARES
 "selector-attribute-quotes": "always"//REQUERIR COMILLAS PARA VALOES DE ATRIBUTOS
+
+
+#### NO TESTEANDO
+
 
 */
