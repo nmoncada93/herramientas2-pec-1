@@ -1,18 +1,19 @@
 .header {
+    margin-bottom: 10%;
     font-family: $font-family-spacial1;
     color: var(--color-white);
     background-color: var(--color-black);
-    margin-bottom: 10%;
+
 
     &__h1 {
         padding: 5% 0% 5% 0%;
         font-size: $font-size-h1;
-        letter-spacing: 5;
-        word-spacing: 8;
         font-weight: bold;
         line-height: 1.5;
         color: var(--color-white);
         text-align: center;
+        letter-spacing: 5;
+        word-spacing: 8;
 
         @media (min-width: 992px) {
             font-size: $desk-font-size-h1;
@@ -20,17 +21,18 @@
     }
 
     &__nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
         padding: 3%;
         font-size: 1.5rem;
         line-height: 1.5;
         text-align: center;
         letter-spacing: 3;
-        word-spacing: 1.5rem;
-        border-bottom: double 10px var(--color-darkBlue);
-        position: fixed;
-        width: 100%;
         background-color: var(--color-black);
-        top: 0;
+        border-bottom: double 10px var(--color-darkBlue);
+        word-spacing: 1.5rem;
+
     }
 
     &__li {
@@ -38,10 +40,10 @@
     }
 
     &__li:hover {
+        font-size: 1.4rem;
         color: var(--color-red);
         -webkit-transition-duration: 0.4s; /* Safari */
         transition-duration: 0.6s;
-        font-size: 1.4rem;
     }
 
     &__img {

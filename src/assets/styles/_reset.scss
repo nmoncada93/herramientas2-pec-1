@@ -1,6 +1,5 @@
 //////////////////////////////////////////////////RESET DE TODO EL CSS/////////////////////////////////////////////////////////
 
-/* stylelint-disable */
 /* Definimos las Custom properties */
 :root{
     /* Colores */
@@ -13,18 +12,18 @@
 
 //Reseteamos los margin y Paddings de las etiquetas
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
     box-sizing: border-box; //solventamos lso problemas d emodelo caja
+    padding: 0;
+    margin: 0;
     vertical-align: baseline;
+    border: 0;
 }
 
 /*Evitamos problemas con imagenes y videos*/
 img, picture, video, iframe, figure{
-    max-width: 100%;
-    width: 100%;
     display: block;
+    width: 100%;
+    max-width: 100%;
     /*opcional*/object-fit: cover;
     /*opcional*/object-position: center center;
 }
@@ -32,9 +31,18 @@ img, picture, video, iframe, figure{
 //Resetemaos los enlaces para funcionar como cajas...
 a {
     display: block;
-    /*opcional*/text-decoration: none;
-    /*opcional*/color:inherit;
     /*opcional*/font-size:inherit;
+    /*opcional*/color:inherit;
+    /*opcional*/text-decoration: none;
+}
+
+//Desactivamos estilos por defecto de las principales etiquetas de texto
+h1 , h2 , h3 , h4 , h5 , h6 , a , span , p , strong , blockquote , i , b , u , em {
+    font-size: 1em; //se adapta según el tamaño de la etiqueta de body
+    font-style: inherit;
+    font-weight: inherit; //nos servirá con BEM, así lo configuraremos desde la etiqueta bloque
+    color: inherit;
+    text-decoration: none;
 }
 
 //...Excepto los que se encuentran en parrafos
@@ -52,33 +60,18 @@ html {
     scroll-behavior: smooth;
 }
 
-//Desactivamos estilos por defecto de las principales etiquetas de texto
-h1 , h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , i , b , u , em {
-    font-size: 1em; //se adapta según el tamaño de la etiqueta de body
-    font-weight: inherit; //nos servirá con BEM, así lo configuraremos desde la etiqueta bloque
-    font-style: inherit;
-    text-decoration: none;
-    color: inherit;
-}
 
 /* Reseteamos las tablas */
 table , tr , td {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
 }
 
 /* Configuramos la tipografía para toda la web */
 body {
   min-height  : 100vh; //Altura minima
   font-size   : 100%; //Ideal para que se adapte a lo que configura el usuario
-  //font-family : var(--font-first);
-  ///color       : var(--color-first);
-  //background-color: var(--color-second);
   /* (opcional) */ line-height: 1.4em; //por cuestiones de diseño con las WCAG
-  /* (Opcional) */ //hyphens: auto; //si algun texto no cabe, pondrá un guión y lo enviará a la linea siguiente, se evita desbordamiento
-  /* (Opcional) */ font-smooth: always;
   /* (Opcional) */ -webkit-font-smoothing: antialiased;
   /* (Opcional) */ -moz-osx-font-smoothing: grayscale; //mejora la tipografía
 }
-/* stylelint-enable */
-

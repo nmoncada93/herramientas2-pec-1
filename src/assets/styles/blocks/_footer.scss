@@ -1,11 +1,11 @@
 .footer {
-    text-align: center;
-    color: var(--color-white);
-    background-color: var(--color-black);
     padding: 10%;
     margin-top: 15%;
     font-family: $font-family-spacial1;
+    color: var(--color-white);
+    text-align: center;
     letter-spacing: 1.5;
+    background-color: var(--color-black);
 
     &__li, &__p {
         line-height: 2rem;
@@ -16,9 +16,9 @@
     }
 
     &__li:hover {
+        font-size: 1.2rem;
         color: var(--color-red);
         -webkit-transition-duration: 0.4s; /* Safari */
         transition-duration: 0.7s;
-        font-size: 1.2rem;
     }
 }

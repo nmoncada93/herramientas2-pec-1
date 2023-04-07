@@ -5,9 +5,9 @@
         font-size: $font-size-h2;
         font-weight: bold;
         line-height: 1.5;
+        color: var(--color-blue);
         text-align: center;
         letter-spacing: 2;
-        color: var(--color-blue);
 
         @media (min-width: 992px) {
             font-size: $desk-font-size-h2;
@@ -15,24 +15,24 @@
     }
 
     &__h3 {
+        margin-top: 6%;
         font-family: $font-family-spacial1;
         font-size: $font-size-h3;
-        margin-top: 6%;
-        letter-spacing: 2;
-        text-align: left;
         font-weight: bold;
+        text-align: left;
+        letter-spacing: 2;
 
         @media (min-width: 992px) {
             font-size: $desk-font-size-h3;
         }
-
     }
     
     &__p {
-        font-size: $font-size-p;
         margin: 5% 0 5% 0;    
-        word-spacing: 0.4em;    
+        font-size: $font-size-p;
         hyphens: auto;
+        word-spacing: 0.4em;    
+
 
         @media (min-width: 992px) {
             font-size: $desk-font-size-p;
@@ -40,10 +40,11 @@
     }
 
     &__li {
-        font-size: $font-size-p;
         margin: 5% 4% 5% 4%;  
-        list-style-type: disc;   
+        font-size: $font-size-p;
         hyphens: auto; //si algun texto no cabe, pondrá un guión y lo enviará a la linea siguiente  
+        list-style-type: disc;   
+
 
         @media (min-width: 992px) {
             font-size: $desk-font-size-p;
@@ -51,15 +52,17 @@
     }
 
     &__span {
-        color: var(--color-red);
         font-weight: bold;  
+        color: var(--color-red);
+
     }
 
     @media (min-width: 992px) {
         .div {
             display: grid;
-            grid-gap: 20px;
             grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+
         }
 
         .div3 {

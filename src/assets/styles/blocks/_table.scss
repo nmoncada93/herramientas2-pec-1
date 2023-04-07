@@ -10,16 +10,16 @@
     }
 
     &__td {
-        border: 1px var(--color-white) solid;
         text-align: center;
+        border: 1px var(--color-white) solid;
     }
 
     &__th {
-        text-align: center;
-        font-size: 0.8rem;
-        border: 0.7rem transparent solid;
         padding: 2% 0% 2% 0%;
+        font-size: 0.8rem;
         color: var(--color-blue);
+        text-align: center;
+        border: 0.7rem transparent solid;
 
         @media (min-width: 992px){
             font-size: 1.3rem;
